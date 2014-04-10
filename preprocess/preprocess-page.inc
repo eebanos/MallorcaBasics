@@ -1,7 +1,7 @@
 <?php
 
 function mallorca_basics_alpha_preprocess_html(&$vars) {
-  drupal_add_css('http://fonts.googleapis.com/css?family=Open+Sans:400,800',array('type' => 'external'));
+  drupal_add_css('//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800',array('type' => 'external'));
 //  drupal_add_css('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css',array('type' => 'external'));
 
   $path = drupal_get_path('theme', 'mallorca_basics');

@@ -1,7 +1,7 @@
 /*global window */
 /*global jQuery */
 (function ($) {
-    $(window).scroll(function() {
+/*    $(window).scroll(function() {
         var topOfWindow = $(window).scrollTop();
         var imagePos = $('.service').offset().top;
 
@@ -14,5 +14,5 @@
         if (imagePos < topOfWindow+700){
             highlight($('.srv-animated'), 0);
         }
-    });
+    });*/
 }(jQuery));;

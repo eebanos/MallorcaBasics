@@ -2,10 +2,6 @@
 /* If you are using the default media queries provided by Omega, these styles will also
  *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
 
-body{
-    font-size: 100%;
-    background: url("../img/diagonal.png") repeat scroll left top rgba(0, 0, 0, 0);
-}
 
 /* fontawesome */
 [class*="fontawesome-"]:before {
@@ -22,12 +18,20 @@ body{
     height:100%;
 }
 
-#region-menu ul li a, #block-menu-menu-main-bottom ul li a, #privacy p{
-    font: 300 1.32148em/2.3 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
-    letter-spacing: -0.06em;
+.site-name-slogan{
+    margin-top: 10px;
 }
 
-h1.site-name, h2.site-name{
+#region-menu ul li a{
+    font: 300 1.575em/1.8em 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+#block-menu-menu-main-bottom ul li a{
+    font: 300 1.42148em/2.3 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+h1.site-name{
     margin-top:0;
     margin-bottom: 32px;
     font-size: 3.75em;
@@ -38,20 +42,43 @@ h6.site-slogan{
 }
 
 #region-header-first{
-    padding-top: 4.125em;
     display:block;
 }
 
 #flexslider-1{
     border-bottom: 4px solid rgba(169,219,224,0.5);
+    box-shadow: 0 8px 0 -6px rgba(0, 0, 0, 0.15);
+}
+
+#block-views-services-list-block{
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+}
+
+.service-item a{
+    font: 300 1.42148em/1.5 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#block-views-services-list-block, #block-views-services-block{
+    background-color: #FFF;
+    padding-top:1.25em;
+    padding-bottom:1.25em;
+}
+
+#block-views-services-block .block-title{
+    padding-left:1.25em;
+}
+
+.main-srv-container{
+    margin-top:0.625em;
 }
 
 #block-block-we-will-block-we-will, #block-views-services-list-block, #block-views-services-block{
-    padding-top: 1.25em;
-    padding-bottom: 1.25em;
+    margin-top: 1.25em;
 }
 
-#block-block-we-will-block-we-will{
+h2.we-will{
+    margin-bottom: 17px !important;
 }
 
 #block-views-front-services-block{
@@ -60,30 +87,31 @@ h6.site-slogan{
 
 .service {
     height:450px;
+    box-shadow: 0 8px 0 -6px rgba(0, 0, 0, 0.15);
 }
 
-.srv-animated{
+/*.srv-animated{
     visibility: hidden;
-}
+}*/
 
 .srv-0{
-    background-color: rgba(88,125,118,0.9);
-    border-bottom: 10px solid rgba(150,140,106,0.9);
+    /*background-color: rgba(88,125,118,0.9);*/
+    background-color: rgba(48,100,105,0.9);
 }
 
 .srv-1{
-    background-color: rgba(208,153,218,0.9);
-    border-bottom: 10px solid rgba(162,201,194,0.9);
+    /*background-color: rgba(208,153,218,0.9);*/
+    background-color: rgba(106,221,233,0.9);
 }
 
 .srv-2{
-    background-color: rgba(162,201,194,0.9);
-    border-bottom: 10px solid rgba(208,153,218,0.9);
+    /*background-color: rgba(162,201,194,0.9);*/
+    background-color: rgba(112,233,246,0.9);
 }
 
 .srv-3{
-    background-color: rgba(150,140,106,0.9);
-    border-bottom: 10px solid rgba(88,125,118,0.9);
+    /*background-color: rgba(150,140,106,0.9);*/
+    background-color: rgba(94,197,207,0.9);
 }
 
 .srv-title{
@@ -109,6 +137,7 @@ h6.site-slogan{
     filter:url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
     filter: gray; /* IE6-9 */
     -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+    -webkit-transition: all 1.6s ease 0s;-moz-transition: all 1.6s ease 0s;-ms-transition: all 1.6s ease 0s;-o-transition: all 1.6s ease 0s;transition: all 1.6s ease 0s;
     transition: all 1.6s ease 0s;
     visibility: visible !important;
 }
@@ -116,17 +145,18 @@ h6.site-slogan{
 .inner-box img:hover{
     filter: none;
     -webkit-filter: grayscale(0%);
-    transition: all 1.6s ease 0s;
+    -webkit-transition: all 1.6s ease 0s;-moz-transition: all 1.6s ease 0s;-ms-transition: all 1.6s ease 0s;-o-transition: all 1.6s ease 0s;transition: all 1.6s ease 0s;
 }
 
 #block-views-special-promoted-block{
     padding-top:20px;
     background: none repeat scroll 0 0 rgba(121,150,145,0.1);
+    box-shadow: 0 8px 0 -6px rgba(0, 0, 0, 0.15);
 }
 
 #block-mbasics-mailchimp-register-mbasics-mailchimp{
-    padding-top: 40px;
-    height: 120px;
+    padding-top: 100px;
+    height: 200px;
 }
 
 #mbasics-mailchimp-register-form h2.we-send{
@@ -140,20 +170,23 @@ h6.site-slogan{
     padding-bottom: 20px;
 }
 
-#quote{
-    padding-top: 0;
+.logo-footer{
+    margin-top:5px;
 }
 
-#quote i:first-child{
-    padding-right: 10px;
+#region-footer-first{
+    margin-top: 10px;
 }
 
-h2#q-in{
-    font: 300 1.421481678337237em 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
-    line-height: 2.3;
-    letter-spacing: -0.06em;
+.logo-footer{
+    width:100%;
 }
 
+#zone-footer{
+    padding-top: 20px;
+}
+
+/*
 .second-slogan:not(:hover) {
     animation: 8s ease 2s normal none infinite shake;
-}
+}*/
