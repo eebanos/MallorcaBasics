@@ -1,0 +1,278 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+body{
+    background: none repeat scroll 0 0 #FFF;
+    color: #9D9D9D;
+    font: 0.9em/1.42857 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+.element-invisible{
+    display:none;
+}
+
+::selection {
+    background: rgb(106, 210, 191); /* Safari */
+}
+::-moz-selection {
+    background: rgb(106, 210, 191); /* Firefox */
+}
+
+#region-menu ul li a, #block-menu-menu-main-bottom ul li a{
+    display: block;
+    text-align: center;
+    padding:10px 0;
+    font: 100 1.0em/1.3 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing: -0.06em;
+}
+
+#region-menu ul li:nth-child(1) {  
+  background:none repeat scroll 0 0 #587C76;
+}
+
+#region-menu ul li:nth-child(2) {  
+  background:none repeat scroll 0 0 #D099D2;
+}
+
+#region-menu ul li:nth-child(3) {  
+  background:none repeat scroll 0 0 #A2C9C2;
+}
+
+#region-menu ul li:nth-child(4) {  
+  background:none repeat scroll 0 0 #968C6A;
+}
+
+ul.inline li{
+    display: list-item;
+    list-style: none outside none;
+    margin: 0 auto;
+}
+
+li, li.active {
+   color: #FFFFFF;
+}
+
+#region-menu a:link, #region-menu a:visited, #block-menu-menu-main-bottom a:link, #block-menu-menu-main-bottom a:visited, #privacy a:link, #privacy a:visited, .service-item a:link, .service-item a:visited, .main-srv h2{
+    text-decoration: none;
+    color:#000000;
+}
+
+#region-menu ul li a:hover{
+    color: #FFFFFF;
+    transition: all 0.25s ease 0s;
+}
+
+#block-menu-menu-main-bottom ul li a:hover, #privacy p > a:hover, .service-item a:hover, .marker-title:hover{
+    color: #A2C9C2 !important;
+    transition: all 0.25s ease 0s !important;
+}
+
+#region-menu ul li.active a{
+    color:#FFFFFF;
+}
+
+.logo-img{
+    margin: 0 auto;
+}
+
+#logo{
+    width:100%;
+}
+
+.site-name-slogan{
+   float: none; 
+}
+
+h1.site-name, h2.site-name, h6.site-slogan{
+    text-align: center;
+    font-family:'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h6.site-slogan{
+    font-size: 1.75em;
+}
+
+h6.site-slogan span{
+    color: #A2C9C2;
+}
+
+h6.site-slogan a:hover{
+    opacity: 0.7;
+    transition: all 0.25s ease 0s;
+}
+
+h6.site-slogan a{
+    background: url("../img/more_arrow1.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 20px;
+    position: relative;
+    top: 0;
+    transition: all 0.25s ease 0s;
+    width: 20px;
+}
+
+h2.we-wil{
+    margin: 0 0 12px;
+}
+
+h2.we-will, h2.we-prom, h2.we-send{
+    color: #383838;
+    font: 300 1.875em/48px 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 1em;
+}
+
+h2.we-prom{
+    text-align: start;
+}
+
+p.second-slogan, .p-prom{
+    color: #9D9D9D;
+    font: 300 1.125em/28px 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+p.second-slogan{
+    text-align: center;
+}
+
+h1.site-name > a, h2.site-name > a{
+    color:#000000;
+}
+
+#page-title, h2.block-title{
+    font: 300 1.875em/48px 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #383838;
+}
+
+p{
+  color: #383838;  
+}
+
+#region-header-first{
+    display:none;
+}
+
+.btn{
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #CCCBCC;
+    box-shadow: none;
+    color: #303030 !important;
+    display: inline-block;
+    font: 600 0.875em 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing: 0;
+    margin: 0;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    width:100%;
+    position: relative;
+    text-decoration: none !important;
+    text-shadow: none;
+    text-align: center;
+    transition: all 0.25s ease 0s;
+}
+
+.btn:hover{
+    background: none repeat scroll 0 0 rgba(204,203,204,.3);
+    border-color: #254943;
+    color: rgb(106, 210, 191) !important;
+    text-decoration: none !important;
+    transition: all 0.25s ease 0s;
+}
+
+#edit-mailchimp-form, #mbasics-contact-form input{
+    font: 600 0.875em 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 0;
+    box-shadow: none;
+    color: #A2C9C2;
+    margin: 0;
+    padding: 12px 0 12px 10px;
+    transition: all 0.4s ease-out 0s;
+    width:100%;
+}
+
+textarea{
+    font: 600 0.875em 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #A2C9C2;
+}
+
+.form-item input.error, .form-item textarea.error, .form-item select.error{
+    border: 2px solid rgb(255, 0, 0)!important;
+    color: rgb(255, 0, 0)!important;
+}
+
+#mbasics-mailchimp-register-form .grid-2.omega{
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+#mbasics_mailchimp_ajax_wrapper{
+    text-align: center;
+    padding: 5px;
+    margin-right:0;
+    font: 600 0.875em 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.block-mbasics-footer-mbasics-info h2.site-name {
+    font-size: 2.3em;
+    color: #383838;
+}
+
+#quote{
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+#quote i{
+    font-size: 0.8em;
+    color:rgba(208, 153, 218, 0.9);
+}
+
+h2#q-in{
+    font: 300 30px/1em 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing: -0.06em;
+    margin-bottom: 0;
+}
+
+.mbasics_info{
+    padding-left: 20px;
+}
+
+span.second-slogan{
+    padding-left: 5px;
+    color: #A2C9C2;
+}
+
+.menu-social a{
+    -khtml-opacity:.35; 
+    -moz-opacity:.35; 
+    -ms-filter:"alpha(opacity=35)";
+     filter:alpha(opacity=35);
+     filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0.35);
+     opacity:.35;
+    transition: all 0.25s ease 0s;
+}
+
+.menu-social a:hover > p i{
+    -khtml-opacity:1; 
+    -moz-opacity:1; 
+    -ms-filter:"alpha(opacity=100)";
+     filter:alpha(opacity=100);
+     filter: progid:DXImageTransform.Microsoft.Alpha(opacity=1);
+     opacity:1;
+    color: #A2C9C2;
+    transition: all 0.25s ease 0s;
+}
+
+.menu-social p, #privacy p{
+    text-align: center;
+}
+
+#privacy span{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+#privacy em{
+    padding-right: .5em;
+}

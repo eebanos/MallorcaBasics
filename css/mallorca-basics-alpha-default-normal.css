@@ -1,0 +1,159 @@
+/* This file will hold styles that are loaded using the same media query as the normal grid. */
+/* If you are using the default media queries provided by Omega, these styles will also
+ *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
+
+body{
+    font-size: 100%;
+    background: url("../img/diagonal.png") repeat scroll left top rgba(0, 0, 0, 0);
+}
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+#main-menu, .menu{
+    margin:0 auto;
+}
+
+#region-menu ul li, ul.menu li{
+    display: inline-block;
+    padding:0;
+    height:100%;
+}
+
+#region-menu ul li a, #block-menu-menu-main-bottom ul li a, #privacy p{
+    font: 300 1.32148em/2.3 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing: -0.06em;
+}
+
+h1.site-name, h2.site-name{
+    margin-top:0;
+    margin-bottom: 32px;
+    font-size: 3.75em;
+}
+
+h6.site-slogan{
+    font-size: 1.875em;
+}
+
+#region-header-first{
+    padding-top: 4.125em;
+    display:block;
+}
+
+#flexslider-1{
+    border-bottom: 4px solid rgba(169,219,224,0.5);
+}
+
+#block-block-we-will-block-we-will, #block-views-services-list-block, #block-views-services-block{
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+}
+
+#block-block-we-will-block-we-will{
+}
+
+#block-views-front-services-block{
+    padding-bottom: 1.25em;
+}
+
+.service {
+    height:450px;
+}
+
+.srv-animated{
+    visibility: hidden;
+}
+
+.srv-0{
+    background-color: rgba(88,125,118,0.9);
+    border-bottom: 10px solid rgba(150,140,106,0.9);
+}
+
+.srv-1{
+    background-color: rgba(208,153,218,0.9);
+    border-bottom: 10px solid rgba(162,201,194,0.9);
+}
+
+.srv-2{
+    background-color: rgba(162,201,194,0.9);
+    border-bottom: 10px solid rgba(208,153,218,0.9);
+}
+
+.srv-3{
+    background-color: rgba(150,140,106,0.9);
+    border-bottom: 10px solid rgba(88,125,118,0.9);
+}
+
+.srv-title{
+    height: 100px;
+    color: #FFFFFF !important;
+    font: 800 2.25em/39px 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-bottom: 39px;
+}
+
+.service p{
+    height: 200px;
+    padding-top:50px;
+    font: 0.875em/18px 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:#FFFFFF;
+}
+
+.inner-box{
+    padding: 10px;
+}
+
+.inner-box img{
+    padding: 10px;
+    filter:url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+    transition: all 1.6s ease 0s;
+    visibility: visible !important;
+}
+
+.inner-box img:hover{
+    filter: none;
+    -webkit-filter: grayscale(0%);
+    transition: all 1.6s ease 0s;
+}
+
+#block-views-special-promoted-block{
+    padding-top:20px;
+    background: none repeat scroll 0 0 rgba(121,150,145,0.1);
+}
+
+#block-mbasics-mailchimp-register-mbasics-mailchimp{
+    padding-top: 40px;
+    height: 120px;
+}
+
+#mbasics-mailchimp-register-form h2.we-send{
+    font: 300 48px 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top:0;
+}
+
+.block-mbasics-footer-mbasics-info{
+    padding-bottom: 20px;
+}
+
+#quote{
+    padding-top: 0;
+}
+
+#quote i:first-child{
+    padding-right: 10px;
+}
+
+h2#q-in{
+    font: 300 1.421481678337237em 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 2.3;
+    letter-spacing: -0.06em;
+}
+
+.second-slogan:not(:hover) {
+    animation: 8s ease 2s normal none infinite shake;
+}

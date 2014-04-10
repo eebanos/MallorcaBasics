@@ -1,0 +1,122 @@
+/* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
+#zone-menu-wrapper{
+    background:none repeat scroll 0 0 #FFF;
+    border-bottom: 2px solid #6AD2BF;
+}
+
+#region-branding{
+    padding-top: 0.3125em;
+}
+
+#region-menu ul li a, #block-menu-menu-main-bottom ul li a, #privacy p, .service-item a, .main-srv h2, .marker-title{
+    font: 300 1.32148em/2 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+    letter-spacing: -0.06em !important;
+}
+
+.main-srv-container{
+    height:250px;
+}
+
+.main-srv-exp{
+    height: 150px;
+}
+
+.main-srv h2{
+    margin-bottom: 0.4em;
+}
+
+.main-srv-exp p{
+    font: 0.875em/18px 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.caret{
+    padding-right: 0.2em;
+    color: #6AD2BF;
+}
+
+#main-menu{
+     margin-bottom: 0;
+}
+
+ul#main-menu li,ul.menu li{
+     padding:0;
+ }
+
+#region-menu ul li:nth-child(1n+1){
+    background:none repeat scroll 0 0 transparent;
+}
+
+ul.menu li:nth-child(1n+1), #region-menu ul li:nth-child(1n+1){
+    width:25%;
+    float:left;
+}
+
+#region-menu ul li a{
+    color:#254943;
+}
+
+#region-menu ul li.active a{
+    color: #6AD2BF;
+}
+
+#region-menu ul li a:hover{
+    color: #6AD2BF;
+    background:none repeat scroll 0 0 rgba(37, 73, 67, 0.7);
+    transition: all 0.25s ease 0s;
+}
+
+.menu-social li{
+    width:33.3% !important;
+}
+
+.menu-social p{
+    margin: 0 auto;
+}
+
+.menu-social i{
+    font-size:2em;
+}
+
+h2.we-will{
+    text-align: center;
+    margin: 0 !important;
+}
+
+h2.we-send{
+    margin-top: 0.8em;
+}
+
+.srv-title{
+    height: 50px;
+    padding-top: 20px;
+    text-transform: uppercase;
+    transition: all 0.35s ease 0s;
+}
+
+.srv-0 .srv-title{
+    color: rgba(88,125,118,0.9);
+}
+
+.srv-1 .srv-title{
+    color: rgba(208,153,218,0.9);
+}
+
+.srv-2 .srv-title{
+    color: rgba(162,201,194,0.9);
+}
+
+.srv-3 .srv-title{
+    color: rgba(150,140,106,0.9);
+}
+
+.prom{
+    border-bottom: 4px solid rgba(0,0,0,0.9);
+}
+
+.we-prom, .p-prom{
+    height: 100px;
+}
+
+.p-prom{
+    padding-bottom: 25px;
+}
