@@ -1,4 +1,9 @@
 /* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
+body{
+    background: url("../img/diagonal.png") repeat scroll left top rgba(0, 0, 0, 0);
+    font: 16px/1.42857 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
 #zone-menu-wrapper{
     background:none repeat scroll 0 0 #FFF;
     border-bottom: 2px solid #6AD2BF;
@@ -8,9 +13,9 @@
     padding-top: 0.3125em;
 }
 
-#region-menu ul li a, #block-menu-menu-main-bottom ul li a, #privacy p, .service-item a, .main-srv h2, .marker-title{
-    font: 300 1.32148em/2 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+#region-menu ul li a, #block-menu-menu-main-bottom ul li a, .service-item a, .main-srv h2, .marker-title{
     letter-spacing: -0.06em !important;
+    color:#383838;
 }
 
 .main-srv-container{
@@ -23,10 +28,14 @@
 
 .main-srv h2{
     margin-bottom: 0.4em;
+    font: 300 1.42148em/2.3 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing: -0.06em;
+    padding-left: 1.25em;
 }
 
 .main-srv-exp p{
     font: 0.875em/18px 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding-left: 20px;
 }
 
 .caret{
@@ -52,6 +61,7 @@ ul.menu li:nth-child(1n+1), #region-menu ul li:nth-child(1n+1){
 }
 
 #region-menu ul li a{
+    font: 300 1.421481678337237em 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
     color:#254943;
 }
 
@@ -62,24 +72,13 @@ ul.menu li:nth-child(1n+1), #region-menu ul li:nth-child(1n+1){
 #region-menu ul li a:hover{
     color: #6AD2BF;
     background:none repeat scroll 0 0 rgba(37, 73, 67, 0.7);
-    transition: all 0.25s ease 0s;
-}
-
-.menu-social li{
-    width:33.3% !important;
-}
-
-.menu-social p{
-    margin: 0 auto;
-}
-
-.menu-social i{
-    font-size:2em;
+    box-shadow: 0 8px 0 -6px rgba(0, 0, 0, 0.15);
+    -webkit-transition: all 0.25s ease 0s;-moz-transition: all 0.25s ease 0s;-ms-transition: all 0.25s ease 0s;-o-transition: all 0.25s ease 0s;transition: all 0.25s ease 0s;
 }
 
 h2.we-will{
     text-align: center;
-    margin: 0 !important;
+    margin: 0;
 }
 
 h2.we-send{
@@ -119,4 +118,35 @@ h2.we-send{
 
 .p-prom{
     padding-bottom: 25px;
+}
+
+#quote{
+    padding-top: 0;
+}
+
+#quote i:first-child{
+    padding-right: 10px;
+}
+
+.menu-social li{
+    width:33.3% !important;
+}
+
+.menu-social p{
+    margin: 0 auto;
+}
+
+.menu-social i{
+    font-size:4em;
+}
+
+h2#q-in, #privacy p{
+    font: 300 1.421481678337237em 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*line-height: 2.3;*/
+    letter-spacing: -0.06em;
+}
+
+#zone-footer-wrapper{
+    background-color: rgba(255,255,255,.9);
+    border-top: 2px solid #6AD2BF;
 }

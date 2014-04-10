@@ -1,14 +1,25 @@
 <?php
 
 function mallorca_basics_alpha_preprocess_html(&$vars) {
-  drupal_add_css('http://fonts.googleapis.com/css?family=Open+Sans:400,800',array('type' => 'external'));
-//  drupal_add_css('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css',array('type' => 'external'));
-
+  drupal_add_css('//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800',array('type' => 'external'));
   $path = drupal_get_path('theme', 'mallorca_basics');
 //  drupal_add_js(drupal_get_path('theme', 'mallorca_basics') .'/js/jquery.onepage-scroll.min.js', 'file');
 //  drupal_add_css($path . '/css/onepage-scroll.css');
   drupal_add_css($path . '/css/animations.css');
   drupal_add_js(drupal_get_path('theme', 'mallorca_basics') .'/js/behaviors.js', 'file');
+    if(drupal_is_front_page()){
+        drupal_add_js(drupal_get_path('theme', 'mallorca_basics') .'/js/front.js', 'file');
+    }
+    $matches = "contact-us";
+    $path = drupal_get_path_alias($_GET['q']);
+    $page_match = drupal_match_path($path, $matches);
+    if ($path != $_GET['q']) {
+        $page_match = $page_match || drupal_match_path($_GET['q'], $matches);
+    }
+    if ($page_match) {
+        drupal_add_js(drupal_get_path('theme', 'mallorca_basics') .'/js/jquery.lettering-0.6.min.js', 'file');
+        drupal_add_js(drupal_get_path('theme', 'mallorca_basics') .'/js/contact.js', 'file');
+    }
   
   /*Obtengo una variable global para jQuery, ruta al tema*/
   drupal_add_js('jQuery.extend(Drupal.settings, { "pathToTheme": "' . path_to_theme() . '" });', 'inline');
