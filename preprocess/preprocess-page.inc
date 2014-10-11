@@ -8,6 +8,7 @@ function mallorca_basics_alpha_preprocess_html(&$vars) {
   drupal_add_css($path . '/css/animations.css');
   drupal_add_js(drupal_get_path('theme', 'mallorca_basics') .'/js/behaviors.js', 'file');
     if(drupal_is_front_page()){
+        drupal_add_js(drupal_get_path('theme', 'mallorca_basics') .'/js/placeholdem_min.js', 'file');
         drupal_add_js(drupal_get_path('theme', 'mallorca_basics') .'/js/front.js', 'file');
     }
     $matches = "contact-us";
@@ -17,7 +18,7 @@ function mallorca_basics_alpha_preprocess_html(&$vars) {
         $page_match = $page_match || drupal_match_path($_GET['q'], $matches);
     }
     if ($page_match) {
-        drupal_add_js(drupal_get_path('theme', 'mallorca_basics') .'/js/jquery.lettering-0.6.min.js', 'file');
+        drupal_add_js(drupal_get_path('theme', 'mallorca_basics') .'/js/placeholdem_min.js', 'file');
         drupal_add_js(drupal_get_path('theme', 'mallorca_basics') .'/js/contact.js', 'file');
     }
   

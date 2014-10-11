@@ -7,14 +7,20 @@ body{
     text-rendering: optimizeLegibility;
 }
 
+h2{
+    font: 300 1.875em/48px 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #383838;
+}
+
 .ajax-progress div.throbber {
-    line-height: 50px;
+    /*line-height: 50px;*/
     word-spacing: 25px;
     letter-spacing: 25px;
     font-weight: 100;
     font-family: twister !important;
     color: #6AD2BF;
     background-color: #CCC;
+    position:absolute;
 }
 
 .element-invisible{
@@ -235,9 +241,16 @@ h1.site-name > a, h2.site-name > a{
     color:#000000;
 }
 
-#page-title, h2.block-title, .form-title{
+#page-title, h2.block-title, .form-title, .contact-thanks{
     font: 300 1.875em/48px 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #383838;
+}
+
+.contact-thanks{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #FFF;
 }
 
 p{
@@ -246,6 +259,59 @@ p{
 
 #region-header-first{
     display:none;
+}
+
+.service .btn-srv a{
+    font: 600 .875em 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #FFF !important;
+    text-decoration: none !important;
+}
+
+#edit-mailchimp-form, #mbasics-contact-form input{
+    font: 600 0.875em 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 0;
+    box-shadow: none;
+    color: #A2C9C2;
+    margin: 0;
+    padding: 12px 0 12px 10px;
+    transition: all 0.4s ease-out 0s;
+    width:100%;
+}
+
+.form-item-name-field, .form-item-email-field, .form-item-phone-field{
+    margin-top: 0;
+}
+
+#mbasics-contact-form input{
+    width: 97%;
+}
+
+/*input#edit-mollom-captcha--2{
+    width:99%;
+}*/
+
+#mbasics-contact-form input[type=submit]{
+    width:100%;
+    margin-bottom:2em;
+}
+
+input#edit-mollom-captcha--2{
+    width: 99%;
+}
+
+textarea{
+    font: 600 0.875em 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding: 12px 0 0 10px;
+    transition: all 0.4s ease-out 0s;
+    color: #A2C9C2;
+    margin-bottom: 2em !important;
+}
+
+.form-item input.error, .form-item textarea.error, .form-item select.error{
+    border: 2px solid rgb(255, 0, 0)!important;
+    color: rgb(255, 0, 0)!important;
 }
 
 .btn{
@@ -276,41 +342,15 @@ p{
     cursor: pointer;
 }
 
-.service .btn-srv a{
-    font: 600 .875em 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+.mail-btn{
+    background: none repeat scroll 0 0 rgba(37, 73, 67, 0.7) !important;
+    border: 1px solid #CCCBCC !important;
+    color:#FFF !important;
+}
+
+.mail-btn:hover{
+    background: none repeat scroll 0 0 rgb(106, 210, 191) !important;
     color: #FFF !important;
-    text-decoration: none !important;
-}
-
-#edit-mailchimp-form, #mbasics-contact-form input{
-    font: 600 0.875em 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: none repeat scroll 0 0 #FFFFFF;
-    border: 1px solid #CCCCCC;
-    border-radius: 0;
-    box-shadow: none;
-    color: #A2C9C2;
-    margin: 0;
-    padding: 12px 0 12px 10px;
-    transition: all 0.4s ease-out 0s;
-    width:100%;
-}
-
-#mbasics-contact-form input{
-    width: 99%;
-}
-
-#mbasics-contact-form input[type=submit]{
-    width: 100%;
-}
-
-textarea{
-    font: 600 0.875em 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #A2C9C2;
-}
-
-.form-item input.error, .form-item textarea.error, .form-item select.error{
-    border: 2px solid rgb(255, 0, 0)!important;
-    color: rgb(255, 0, 0)!important;
 }
 
 #mbasics-mailchimp-register-form .grid-2.omega{
@@ -330,8 +370,6 @@ textarea{
     margin-top: 10px;
     color: #383838;
 }
-
-
 
 #quote{
     text-align: center;

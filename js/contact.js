@@ -2,6 +2,6 @@
 /*global jQuery */
 (function ($) {
     $(window).load(function () {
-        $('input[type="submit"]').lettering();
+        Placeholdem( document.querySelectorAll( '[placeholder]' ) );
     });
 }(jQuery));;

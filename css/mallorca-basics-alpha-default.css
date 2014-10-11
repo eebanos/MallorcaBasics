@@ -33,9 +33,14 @@ body{
     padding-left: 1.25em;
 }
 
+.srv-design img{
+    margin-bottom: 10px;
+/*    width: 100%;
+    height: auto;*/
+}
+
 .main-srv-exp p{
     font: 0.875em/18px 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
-    padding-left: 20px;
 }
 
 .caret{
@@ -109,7 +114,7 @@ h2.we-send{
 }
 
 .prom{
-    border-bottom: 4px solid rgba(0,0,0,0.9);
+    border-bottom: 4px solid #6AD2BF;
 }
 
 .we-prom, .p-prom{
@@ -149,4 +154,5 @@ h2#q-in, #privacy p{
 #zone-footer-wrapper{
     background-color: rgba(255,255,255,.9);
     border-top: 2px solid #6AD2BF;
+    border-bottom:10px solid #6AD2BF;
 }
